@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecules</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="molecules logo.jpeg" alt="Logo">Molecules</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="home.html" class="home-active">Home</a></li>
+            <li><a href="Sizzle.html">Sizzle</a></li>
+            <li><a href="Frost.html">Frost</a></li>
+            <li><a href="diva.html">Diva</a></li>
+            <li><a href="Essence.html">Essence</a></li>
+        </ul>
+        <div class="icons">
+            <i class='bx bx-search' id="search-icon"></i>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <i class='bx bx-user' id="login-icon"></i>
+        </div>
+        <div class="profile">
+            <span>Login</span>
+            <i class='bx bx-caret-down'></i>
+        </div>
+    </header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content search-modal-content">
+            <span class="close search-close">&times;</span>
+            <h2>Search</h2>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" id="searchBtn">Search</button>
+            <div id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <div class="home-content">
+                    <div class="home-text">
+                        <span>Molecules</span>
+                        <h1 class="font">Recreating Nostalgic Fragrance <br>& Memories.</h1>
+                        <a href="#" class="btn">Explore<i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="home-image">
+                        <img src="profile.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="products" id="products">
+		<div class="heading">
+			<h1>Latest Products</h1>
+		</div>
+		<div class="produts-container">
+			<div class="box">
+				<img src="ef70cb1e-866c-4011-be20-8eb56ad42fa2.jpg" alt="">
+				<span>Montale's</span>
+				<h2> Bakhoor</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>2500.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">New</span>
+
+			</div>
+			<div class="box">
+				<img src="9pm.jpg" alt="">
+				<span> Afnan</span>
+				<h2>9PM</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">New</span>
+
+			</div>
+			<div class="box">
+				<img src="Ameer  Al Oud.jpg" alt="">
+				<span>Lattafa</span>
+				<h2>Ameer Al Oudh Intense Oud</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>400.00-<i class='bx bx-rupee'></i>5000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">New</span>
+
+			</div>
+			<div class="box">
+				<img src="aound mancera.jpg" alt="">
+				<span>Mancera's</span>
+				<h2>Aoud Exclusif</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>350.00-<i class='bx bx-rupee'></i>2000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">New</span>
+
+			</div>
+			<div class="box">
+				<img src="bad boy.jpg" alt="">
+				<span>Carolina Herrera's</span>
+				<h2>Bad Boy</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>1500.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">-New</span>
+
+			</div>
+			<div class="box">
+				<img src="Bakhoor Al arab.webp" alt="">
+				<span>Dhoop Sticks</span>
+				<h2>  Bakhoor Al Arab</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>2500.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">New</span>
+
+			</div>
+			<div class="box">
+				<img src="withoutpolish.webp" alt="">
+				<span>Grade3</span>
+				<h2>Natural AgarWood Sticks Without Polish </h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>2500.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">New</span>
+
+			</div>
+			<div class="box">
+				<img src="bakhoor-unique-blend.jpg" alt="">
+				<span>Unique Blend</span>
+				<h2>Bakhoor</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>2500.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">New</span>
+
+			</div>
+			<div class="box">
+				<img src="WhatsApp Image 2024-08-07 at 10.45.18 PM (1).jpeg" alt="">
+				<span>Molecules</span>
+				<h2>Bakhoor Comb</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>2500.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+					<i class='bx bx-right-arrow-alt' ></i>
+				<span class="discount">New</span>
+
+			</div>
+		</div>
+	</section>
+	<section class="products" id="products">
+		<div class="heading">
+			<h1>Best Sellers</h1>
+		</div>
+		<div class="produts-container">
+			<div class="box">
+				<img src="ef70cb1e-866c-4011-be20-8eb56ad42fa2.jpg" alt="">
+				<span>Louis Vuitton's</span>
+				<h2>Ombre Nomade</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>1000.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="Prada L'Homme.jpg" alt="">
+				<span>Prada</span>
+				<h2>L'Homme</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>250.00-<i class='bx bx-rupee'></i>1500.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="Ameer  Al Oud.jpg" alt="">
+				<span>Lattafa</span>
+				<h2>Ameer Al Oudh Intense Oud</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>400.00-<i class='bx bx-rupee'></i>5000.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="aound mancera.jpg" alt="">
+				<span>Mancera's</span>
+				<h2>Aoud Exclusif</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>350.00-<i class='bx bx-rupee'></i>2000.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="Versace Man Eau Fraiche.jpg" alt="">
+				<span>Versace</span>
+				<h2>Man Eau Fraiche</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>1500.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="Bakhoor Al arab.webp" alt="">
+				<span>Dhoop Sticks</span>
+				<h2>  Bakhoor Al Arab</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>2500.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="withoutpolish.webp" alt="">
+				<span>Grade3</span>
+				<h2>Natural AgarWood Sticks Without Polish </h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>2500.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="WhatsApp Image 2024-08-07 at 10.45.18 PM (1).jpeg" alt="">
+				<span>Molecules</span>
+				<h2>Bakhoor Comb</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>2500.00<span>Ml</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+					<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+		</div>
+	</section>
+	 <!-- Footer Section -->
+	 <section class="footer" id="footer">
+        <div class="footer-box">
+            <span class="bold">MOLECULES</span>
+            <p>Abarbagh, Malakpet<br>Mahaqam E Ibrahim, FL 301<br>Hyderabad</p>
+            <div class="social">
+                <a href="https://whatsapp.com/channel/0029VaYRdqfHgZWXUTgeC00I"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.instagram.com/themoleculesfamily?igsh=NWJ1Y3U5bHRnOGNi"><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:mohammedshouraimahmed05@gmail.com"><i class='bx bxl-gmail'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <a href="contact.html">CONTACT</a>
+            <a href="About.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+        </div>
+        <div class="footer-box">
+            <h2>Useful Links</h2>
+            <a href="payments.html">Payments & Tax</a>
+            <a href="terms.html">Terms Of Use</a>
+            <a href="return.html">Return Policy</a>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&#169; Molecules All Rights Reserved.</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

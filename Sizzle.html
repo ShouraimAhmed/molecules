@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecules</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the Swiper */
+        .swiper {
+            width: 100%;
+            height: auto; /* Allow the Swiper to adjust its height automatically */
+            margin-top: 80px; /* Adjust to fit under the navbar */
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure the image covers the entire slide area */
+        }
+		.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.swiper-slide img {
+	width: 400px; /* Increased width */
+	height: 300px; /* Adjusted height */
+	object-fit: cover;
+	border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="molecules logo.jpeg" alt="Logo">Molecules</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="home.html" class="home-active">Home</a></li>
+            <li><a href="Sizzle.html">Sizzle</a></li>
+            <li><a href="Frost.html">Frost</a></li>
+            <li><a href="diva.html">Diva</a></li>
+            <li><a href="Essence.html">Essence</a></li>
+        </ul>
+        <div class="icons">
+            <i class='bx bx-search' id="search-icon"></i>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <i class='bx bx-user' id="login-icon"></i>
+        </div>
+        <div class="profile">
+            <span>Login</span>
+            <i class='bx bx-caret-down'></i>
+        </div>
+    </header>
+
+	<!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content search-modal-content">
+            <span class="close search-close">&times;</span>
+            <h2>Search</h2>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" id="searchBtn">Search</button>
+            <div id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Rest of your content -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <div class="home-content">
+                    <div class="home-text">
+                        <span>Molecules</span>
+                        <h1 class="font">Recreating Nostalgic Fragrance <br>& Memories.</h1>
+						<h2>Sizzle <br> (Summer Collection) </h2>
+                        <a href="#" class="btn">Explore<i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="home-image">
+                        <img src="profile.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- Swiper -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="versace man.jpeg" alt="Versace Man">
+            </div>
+            <div class="swiper-slide">
+                <img src="blue ajmal.jpeg" alt="Polo Ultra Blue">
+            </div>
+            <div class="swiper-slide">
+                <img src="viking creed.jpeg" alt="Viking Creed">
+            </div>
+            <div class="swiper-slide">
+                <img src="cr7.jpeg" alt="CR7">
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+	<section class="products" id="products">
+		<div class="heading">
+			<h1>Summer Collection</h1>
+		</div>
+		<div class="produts-container">
+			<div class="box">
+				<img src="desire blue.jpeg" alt="">
+				<span>DunHill</span>
+				<h2>Desire Blue</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>300.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="hugo boss.jpeg" alt="">
+				<span>Hugo</span>
+				<h2>Hugo Boss</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>250.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="polo sport.jpeg" alt="">
+				<span>Ralph Laudren's</span>
+				<h2>Polo Sport</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="blue de channel.jpeg"">
+				<span>Chanel</span>
+				<h2>Blue de Chanel</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>350.00-<i class='bx bx-rupee'></i>2000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="polo ultra blue.jpeg" alt="">
+				<span>Ralph Lauren</span>
+				<h2>Polo Ultra Blue</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="cr7.jpeg" alt="">
+				<span>Cristiano Ronaldo</span>
+				<h2>CR7</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="ivictus paco rabane.jpeg" alt="">
+				<span>Paco Rabanne</span>
+				<h2>Invictus</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+			<div class="box">
+				<img src="versace man.jpeg" alt="">
+				<span>Versace</span>
+				<h2>Man Eau Fraiche</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+			</div>
+			<div class="box">
+				<img src="viking creed.jpeg" alt="">
+				<span>Creed's</span>
+				<h2>Viking</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+			</div>
+			<div class="box">
+				<img src="blue ajmal.jpeg" alt="">
+				<span>Ajmal's</span>
+				<h2>Blu</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+				<a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+				<i class='bx bx-right-arrow-alt' ></i>
+			</div>
+			<div class="box">
+				<img src="hawas for him.jpeg" alt="">
+				<span>Rasasi</span>
+				<h2>Hawas for Him</h2>
+				<h3 class="price"><i class='bx bx-rupee'></i>200.00-<i class='bx bx-rupee'></i>1000.00<span>kg</span></h3>
+                <a href="https://wa.me/c/919493497613"><i class='bx bx-cart-alt'></i></a>
+					<i class='bx bx-right-arrow-alt' ></i>
+				
+
+			</div>
+		</div>
+	</section>
+
+    <!-- Footer Section -->
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <span class="bold">MOLECULES</span>
+            <p>Abarbagh, Malakpet<br>Mahaqam E Ibrahim, FL 301<br>Hyderabad</p>
+            <div class="social">
+                <a href="https://whatsapp.com/channel/0029VaYRdqfHgZWXUTgeC00I"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.instagram.com/themoleculesfamily?igsh=NWJ1Y3U5bHRnOGNi"><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:mohammedshouraimahmed05@gmail.com"><i class='bx bxl-gmail'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <a href="contact.html">CONTACT</a>
+            <a href="About.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+        </div>
+        <div class="footer-box">
+            <h2>Useful Links</h2>
+            <a href="payments.html">Payments & Tax</a>
+            <a href="terms.html">Terms Of Use</a>
+            <a href="return.html">Return Policy</a>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&#169; Molecules All Rights Reserved.</p>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
